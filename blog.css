@@ -102,9 +102,19 @@ h6 {
   color: #fff;
 }
 
+.bs-social li .bi-facebook:hover{
+  transform: scale(1.05);
+  background: #2e7bd8;
+}
+
 .bs-social li .bi-twitter {
   background: #00ACED;
   color: #fff;
+}
+
+.bs-social li .bi-twitter:hover {
+  transform: scale(1.05);
+  background: #3fccff;
 }
 
 .bs-social li .bi-linkedin {
@@ -112,14 +122,30 @@ h6 {
   color: #fff;
 }
 
+.bs-social li .bi-linkedin:hover{
+  transform: scale(1.05);
+  background: #209aeb;
+}
+
 .bs-social li .bi-instagram {
   background: radial-gradient(circle farthest-corner at 32% 106%, #ffe17d 0, #ffcd69 10%, #fa9137 28%, #eb4141 42%, transparent 82%), linear-gradient(135deg, #234bd7 12%, #c33cbe 58%);
   color: #fff;
 }
 
+.bs-social li .bi-instagram:hover {
+  transform: scale(1.05);
+  background: radial-gradient(circle farthest-corner at 32% 106%, #ebd691 0, #fad282 10%, #eea260 28%, #ec7171 42%, transparent 82%), linear-gradient(135deg, #4167f0 12%, #dd64d9 58%);
+}
+
+
 .bs-social li .bi-youtube {
   background: #cd201f;
   color: #fff;
+}
+
+.bs-social li .bi-youtube:hover {
+  transform: scale(1.05);
+  background: #ee4040;
 }
 
 @media (max-width: 768px) {
