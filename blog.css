@@ -1,5 +1,3 @@
-/* stylelint-disable @stylistic/selector-list-comma-newline-after */
-
 .blog-header-logo {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif
     /*rtl:Amiri, Georgia, "Times New Roman", serif*/
@@ -17,42 +15,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif
-    /*rtl:Amiri, Georgia, "Times New Roman", serif*/
-  ;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
-.flex-auto {
-  flex: 0 0 auto;
-}
-
-.h-250 {
-  height: 250px;
-}
-
-@media (min-width: 768px) {
-  .h-md-250 {
-    height: 250px;
+@media (max-width: 768px) {
+  .blog-header-logo {
+    font-size: 1.5rem;
   }
 }
 
-/* Pagination */
-.blog-pagination {
-  margin-bottom: 4rem;
-}
-
-/*
- * Blog posts
- */
-.blog-post {
-  margin-bottom: 4rem;
-}
-
-.blog-post-meta {
-  margin-bottom: 1.25rem;
-  color: #727272;
-}
-
+/* nav menu */
 .nav-scroller {
   position: relative;
   z-index: 2;
@@ -71,6 +43,17 @@ h6 {
   -webkit-overflow-scrolling: touch;
 }
 
+.nav-scroller .nav-link {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .nav-scroller .nav-link {
+    font-size: 0.9rem;
+  }
+}
+
 /* social */
 .bs-social {
   display: flex;
@@ -79,12 +62,19 @@ h6 {
   list-style: none;
 }
 
-.bs-social li a {
-  margin: 2px 2.5px;
-}
-
 .bs-social li {
   display: inline-flex;
+}
+
+.bs-social li a {
+  font-size: 1.2rem;
+  margin: 2px 2.5px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.bs-social li a:hover {
+  color: #000;
 }
 
 .bs-social li a i {
@@ -132,27 +122,28 @@ h6 {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .bs-social {
+    justify-content: center;
+  }
+}
+
 /* post card */
 .post-card {
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* Hover sırasında animasyon */
 }
 
 .post-card:hover {
   transform: scale(1.02);
-  /* Hafif büyütme efekti */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  /* Daha belirgin bir gölge */
 }
 
 .post-img {
   width: 100%;
   height: 300px;
-  /* Yükseklik isteğinize göre ayarlanabilir */
   object-fit: cover;
-  /* Görselin oranını koruyarak kutuya sığdır */
 }
 
 .card-img-overlay {
@@ -162,14 +153,10 @@ h6 {
   width: 100%;
   height: 100%;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
-  /* Gradient ekleniyor */
   color: white;
-  /* Yazılar için beyaz renk */
   display: flex;
-  /* İçeriği hizalamak için flexbox */
   flex-direction: column;
   justify-content: center;
-  /* Yazıları dikey ortala */
   padding: 1rem;
   z-index: 1;
 }
@@ -180,7 +167,6 @@ h6 {
   left: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.8);
-  /* Arka plan yarı saydam */
   color: white;
   display: flex;
   justify-content: space-between;
@@ -192,7 +178,6 @@ h6 {
 
 .card-footer small {
   color: rgba(255, 255, 255, 0.8);
-  /* Daha yumuşak beyaz ton */
 }
 
 .card-footer .author-info {
@@ -203,50 +188,4 @@ h6 {
   width: 100%;
   height: 96px;
   object-fit: cover;
-}
-
-.bs-social li a {
-  font-size: 1.2rem;
-  /* Sosyal medya ikonlarının boyutu */
-  color: #555;
-  transition: color 0.3s ease;
-}
-
-.bs-social li a:hover {
-  color: #000;
-  /* Hover rengini belirleyin */
-}
-
-.nav-scroller .nav-link {
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-}
-
-@media (max-width: 768px) {
-  .bs-social {
-    justify-content: center;
-    /* Mobilde ikonları ortala */
-  }
-
-  .blog-header-logo {
-    font-size: 1.5rem;
-    /* Başlık boyutunu mobil için küçült */
-  }
-
-  .nav-scroller .nav-link {
-    font-size: 0.9rem;
-    /* Menü elemanlarını biraz küçült */
-  }
-}
-
-footer {
-  font-family: "Poppins", sans-serif;
-}
-
-footer a {
-  text-decoration: none;
-}
-
-.footer-title {
-  font-family: "Poppins", sans-serif;
 }
