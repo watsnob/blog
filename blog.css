@@ -48,6 +48,24 @@ h6 {
   padding: 0.5rem 1rem;
 }
 
+.nav-scroller .nav-link {
+  color: #555;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-scroller .nav-link:hover {
+  color: #3f3f3f;
+  background-color: rgba(0, 123, 255, 0.1);
+  border-radius: 0.25rem;
+}
+
+.nav-scroller .nav-link.active {
+  color: #2b2b2b;
+  font-weight: bold;
+  border-bottom: 2px solid #2b2b2b;
+}
+
 @media (max-width: 768px) {
   .nav-scroller .nav-link {
     font-size: 0.9rem;
